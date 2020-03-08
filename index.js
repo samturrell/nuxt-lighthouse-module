@@ -18,7 +18,7 @@ export default async function NuxtLighthouseModule(moduleOptions = {}) {
     if (
         this.options.dev
         || process.argv.find((arg) => arg === 'nuxtbuild')
-        || (!this.slackWebhookUrl && !this.htmlOutput && !this.consoleNotifier)
+        || (!options.slackWebhookUrl && !options.htmlOutput && !options.consoleNotifier)
     ) {
         return;
     }
