@@ -16,8 +16,8 @@
         "nuxt": "^2.11.0"
     },
     "files": [
-        "./lib/**/*",
-        "./index.js"
+        "lib/**/*",
+        "index.js"
     ],
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
