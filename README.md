@@ -10,6 +10,8 @@ This module can log to three different locations:
 
 The module will run a Lighthouse report after your application has been built, or more specifically when the `ready` hook is fired.
 
+This module will also store previous reports in a `.lighthouse` directory in your project root, and will use this to compare and return a `change` value, for how much each metric has changed since the last report.
+
 ## Why?
 
 You may wish to monitor your Lighthouse scores as you make changes to your application, whether during development as part of Continuous Deployment to your staging environment, or after deploying to production.
@@ -43,6 +45,8 @@ module.exports = {
     },
 };
 ```
+
+This module can be disabled completely by setting the `LIGHTHOUSE_DISABLED` environment variable to `true`.
 
 ## Options
 

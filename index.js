@@ -13,9 +13,11 @@ export default async function NuxtLighthouseModule(moduleOptions = {}) {
         ...moduleOptions,
         ...this.options.lighthouse || {},
     };
-
+    console.log(process.env.LIGHTHOUSE_DISABLED);
+    console.log(typeof process.env.LIGHTHOUSE_DISABLED);
     if (
-        this.options.dev
+        process.env.LIGHTHOUSE_DISABLED === 'true'
+        || this.options.dev
         // TODO: Find better way to check for build
         || process.argv.find((arg) => arg === 'nuxtbuild')
         || (!options.slackWebhookUrl && !options.htmlOutput && !options.consoleNotifier)
