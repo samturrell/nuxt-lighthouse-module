@@ -3,6 +3,13 @@
     "version": "1.2.1",
     "main": "index.js",
     "license": "MIT",
+    "repository": "https://github.com/samturrell/nuxt-lighthouse-module",
+    "homepage": "https://github.com/samturrell/nuxt-lighthouse-module",
+    "author": {
+        "name": "Sam Turrell",
+        "email": "sam@samturrell.co.uk",
+        "url": "https://samturrell.co.uk"
+    },
     "dependencies": {
         "axios": "^0.19.2",
         "chalk": "^3.0.0",
