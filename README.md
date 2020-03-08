@@ -55,20 +55,20 @@ The following options are available:
 ### `slackWebhookUrl`
 
 - Type: `string`
-- Default: ''
+- Default: `''`
 
 The webhook url to send the Slack notification to your channel of choice. For information on how to setup a webhook, check out the [Slack Documentation](https://api.slack.com/messaging/webhooks). If no value is supplied, no notification will be sent.
 
 ### `htmlOutput`
 
 - Type: `boolean`
-- Default: false
+- Default: `false`
 
 Set to `true` to enable html output. The results of the report will be copied to the static directory of your app, and will be accessible via the web at `/__lighthouse`.
 
 ### `consoleNotifier`
 
 - Type: `boolean`
-- Default: true
+- Default: `true`
 
 Set to `true` to enable logging to the console.
