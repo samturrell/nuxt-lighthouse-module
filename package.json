@@ -1,0 +1,18 @@
+{
+  "name": "@samturrell/nuxt-lighthouse-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "chalk-table": "^1.0.2",
+    "consola": "^2.11.3",
+    "lighthouse": "^5.6.0"
+  },
+  "devDependencies": {
+    "@netsells/eslint-config": "^3.7.0",
+    "babel-eslint": "^10.1.0",
+    "nuxt": "^2.11.0"
+  }
+}
