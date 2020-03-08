@@ -18,5 +18,8 @@
     "files": [
         "./lib/**/*",
         "./index.js"
-    ]
+    ],
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    }
 }
