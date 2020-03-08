@@ -14,9 +14,9 @@ export default async function NuxtLighthouseModule(moduleOptions = {}) {
         ...this.options.lighthouse || {},
     };
 
-    // TODO: Find better way to check for build
     if (
         this.options.dev
+        // TODO: Find better way to check for build
         || process.argv.find((arg) => arg === 'nuxtbuild')
         || (!options.slackWebhookUrl && !options.htmlOutput && !options.consoleNotifier)
     ) {
@@ -24,11 +24,9 @@ export default async function NuxtLighthouseModule(moduleOptions = {}) {
     }
 
     this.nuxt.hook('ready', () => {
-        setTimeout(() => {
-            new LighthouseModule({
-                context: this,
-                options,
-            });
-        }, 5000);
+        (new LighthouseModule({
+            context: this,
+            options,
+        })).run();
     });
 };
