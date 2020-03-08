@@ -13,8 +13,7 @@ export default async function NuxtLighthouseModule(moduleOptions = {}) {
         ...moduleOptions,
         ...this.options.lighthouse || {},
     };
-    console.log(process.env.LIGHTHOUSE_DISABLED);
-    console.log(typeof process.env.LIGHTHOUSE_DISABLED);
+
     if (
         process.env.LIGHTHOUSE_DISABLED === 'true'
         || this.options.dev
