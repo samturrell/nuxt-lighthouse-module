@@ -46,7 +46,7 @@ module.exports = {
 };
 ```
 
-This module can be disabled completely by setting the `LIGHTHOUSE_DISABLED` environment variable to `true`.
+This module is disabled by default, and must be explicitly enable by setting the `LIGHTHOUSE_ENABLED` environment variable to `true`.
 
 ## Options
 
