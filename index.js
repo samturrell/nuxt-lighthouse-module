@@ -17,8 +17,7 @@ export default async function NuxtLighthouseModule(moduleOptions = {}) {
     if (
         process.env.LIGHTHOUSE_ENABLED !== 'true'
         || this.options.dev
-        // TODO: Find better way to check for build
-        || process.argv.find((arg) => arg === 'nuxtbuild')
+        || this.options._build
         || (!options.slackWebhookUrl && !options.htmlOutput && !options.consoleNotifier)
     ) {
         return;
