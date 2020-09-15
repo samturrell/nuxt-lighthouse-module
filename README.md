@@ -42,7 +42,7 @@ module.exports = {
         slackWebhookUrl: '',
         htmlOutput: true,
         consoleNotifier: true,
-        maxReports: 10
+        maxReports: 10,
     },
 };
 ```
