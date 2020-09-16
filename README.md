@@ -42,6 +42,7 @@ module.exports = {
         slackWebhookUrl: '',
         htmlOutput: true,
         consoleNotifier: true,
+        maxReports: 10,
     },
 };
 ```
@@ -72,3 +73,10 @@ Set to `true` to enable html output. The results of the report will be copied to
 - Default: `true`
 
 Set to `true` to enable logging to the console.
+
+### `maxReports`
+
+- Type: `number`
+- Default: `10`
+
+Set maximum reports to store
