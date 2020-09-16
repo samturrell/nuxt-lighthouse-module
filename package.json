@@ -1,6 +1,6 @@
 {
     "name": "@samturrell/nuxt-lighthouse-module",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "main": "index.js",
     "license": "MIT",
     "repository": "https://github.com/samturrell/nuxt-lighthouse-module",
